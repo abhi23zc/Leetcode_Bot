@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import requests
+from telegram_bot import send_message_to_all
 
 app = Flask(__name__)
 
@@ -42,6 +43,10 @@ def fetch_leetcode_problem_of_the_day():
     else:
         print(f"Failed to fetch data. Status code: {response.status_code}")
 
+@app.route("/")
+def home():
+    send_message_to_all()
+    return "API Version 1.0"
 
 @app.route("/api/v1/")
 def leetcode_bot():
