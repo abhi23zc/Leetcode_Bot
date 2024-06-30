@@ -51,4 +51,4 @@ def leetcode_bot():
     return("hello")
 
 if __name__ == "main":
-    app.run("127..0.0.1", 80, debug=True)
+    app.run("0.0.0.0", debug=True)
