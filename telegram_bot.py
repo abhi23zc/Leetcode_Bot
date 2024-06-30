@@ -1,6 +1,6 @@
 import requests, os
-
-TOKEN = os.environ("TOKEN")
+TOKEN = "6937290734:AAEw11iwOgFpD_o2nDnx6uhBJkuC1YRa-sY"
+TOKEN = os.environ["TOKEN"]
 
 api_data = None
 
