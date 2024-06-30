@@ -43,7 +43,7 @@ def fetch_leetcode_problem_of_the_day():
     else:
         print(f"Failed to fetch data. Status code: {response.status_code}")
 
-@app.route("/")
+@app.route("/fetch")
 def home():
     send_message_to_all()
     return "API Version 1.0"
